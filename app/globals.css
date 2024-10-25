@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* globals.css */
 
 :root {
   --background: #ffffff;
@@ -18,4 +19,51 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1829 185 122); /* Adjust background color as needed */
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  max-width: 600px; /* Set a max width for the carousel */
+  width: 100%; /* Allow it to take full width until max width */
+  height: 70vh;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  text-align: center;
+  max-width: 300px; /* Adjust width as needed */
+}
+
+.review-image {
+  max-width: 250px;
+  max-height: 200px;
+  border-radius: 50%; /* Make image circular */
+  object-fit: cover;
+  margin: 0 auto;
+  border: 4px solid #ff8c00;
+}
+
+.carousel-button {
+  background-color: #ff8c00; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
