@@ -14,7 +14,7 @@ const ReadExcerptSection = () => {
       <h2 className={`${cinzel.className} text-3xl text-center font-bold mb-3`}>
         Read an Excerpt:
       </h2>
-      <div className="bg-white text-black p-4 rounded-lg shadow-lg md:max-h-[550px] overflow-y-scroll md:w-[55%] mx-auto">
+      <div className="bg-white text-black p-4 rounded-lg shadow-lg h-[90vh] md:max-h-[550px] overflow-y-scroll md:w-[55%] mx-auto">
         <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />
       </div>
     </div>
