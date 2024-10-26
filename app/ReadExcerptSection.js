@@ -12,7 +12,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 
 // Configure the worker for pdf.js
 if (typeof window !== "undefined") {
-  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist/build/pdf.worker.min.js`;
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.worker.min.js`;
 }
 
 const ReadExcerptSection = () => {
