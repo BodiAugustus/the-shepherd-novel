@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 
+// Configure the worker for pdf.js
+
 import "react-pdf/dist/Page/TextLayer.css"; // Import text layer styles
 import "react-pdf/dist/Page/AnnotationLayer.css"; // Import annotation layer styles
 import { Cinzel, Playfair_Display } from "next/font/google";
@@ -9,7 +11,9 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 // Configure the worker for pdf.js
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+if (typeof window !== "undefined") {
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist/build/pdf.worker.min.js`;
+}
 
 const ReadExcerptSection = () => {
   const [numPages, setNumPages] = useState(null);
