@@ -1,8 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Cinzel, Playfair_Display } from "next/font/google";
+import Image from "next/image"; // Importing Next.js Image component
+
 const cinzel = Cinzel({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
+
 // Sample review data
 const reviews = [
   {
@@ -15,7 +18,6 @@ const reviews = [
     text: "A gripping tale that kept me on the edge of my seat. The characters are well-developed, and the story is beautifully woven.",
     image: "/review2.jpg", // Replace with your image path
   },
-
   {
     name: "Jessica Singleton",
     text: "Beautifully written and powerful! It hooks you from the first page and doesn't let go until the end! I can't wait for the next one! #FreeAshley!",
@@ -60,12 +62,15 @@ const ReviewCarousel = () => {
       <h2 className={`${cinzel.className} text-center text-3xl font-bold pb-2`}>
         Reader Reviews
       </h2>
-      <div className="carousel-container  ">
+      <div className="carousel-container">
         <div className="carousel-item">
-          <img
+          <Image
             src={reviews[currentIndex].image}
             alt={reviews[currentIndex].name}
             className="review-image"
+            width={200} // Set an appropriate width
+            height={200} // Set an appropriate height
+            layout="intrinsic" // Ensures the image keeps its aspect ratio
           />
           <h3 className="font-bold pt-4">{reviews[currentIndex].name}</h3>
           <p className="leading-tight">{reviews[currentIndex].text}</p>

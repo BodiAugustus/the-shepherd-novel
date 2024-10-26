@@ -1,10 +1,13 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import HeroSection from "./HeroSection";
 import SynopsisSection from "./SynopsisSection";
 import AtAGlanceSection from "./AtAGlanceSection";
 import ReadExcerptSection from "./ReadExcerptSection";
 import ReviewCarousel from "./ReviewCarousel";
 import ReadersAreaSection from "./ReadersAreaSection";
-import ContactForm from "./ContactForm";
+
 import Footer from "./Footer";
 
 export default function Home() {
@@ -16,7 +19,6 @@ export default function Home() {
       <ReadExcerptSection />
       <ReviewCarousel />
       <ReadersAreaSection />
-      <ContactForm />
       <Footer />
     </div>
   );

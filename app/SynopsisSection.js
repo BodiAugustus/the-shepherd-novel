@@ -14,13 +14,14 @@ const SynopsisSection = () => {
           className={`${playfair.className} text-lg md:text-xl lg:text-2xl indent-5 first-letter:text-4xl`}
         >
           In the sprawling landscape of the Bronze Age, a young shepherd boy
-          finds himself teetering on the fragile boundary between civilization's
-          edge and the untamed wilderness. His humble existence is shattered
-          when an invading force storms through his homeland, snatching him away
-          to a life of enslavement. Under the iron-fisted rule of a notorious
-          and undefeated general known for his ruthless tactics, the boy, with
-          his unassuming demeanor and quick-witted charm, maneuvers himself into
-          a peculiar position within the commander's ranks.
+          finds himself teetering on the fragile boundary between
+          civilization&apos;s edge and the untamed wilderness. His humble
+          existence is shattered when an invading force storms through his
+          homeland, snatching him away to a life of enslavement. Under the
+          iron-fisted rule of a notorious and undefeated general known for his
+          ruthless tactics, the boy, with his unassuming demeanor and
+          quick-witted charm, maneuvers himself into a peculiar position within
+          the commander&apos;s ranks.
         </p>
         <p
           className={`${playfair.className} text-lg md:text-xl lg:text-2xl mt-4`}
@@ -29,9 +30,9 @@ const SynopsisSection = () => {
           discovers how to survive in the midst of brutality, using his guile to
           earn favor in the eyes of the general. Yet, hidden behind the facade
           of innocence lies a clever mind honed by the unforgiving landscapes he
-          once roamed as a shepherd. When the truth about the boy's true nature
-          begins to unravel, it's a revelation that arrives too late for the
-          general and his army. Through twists of fate and the cunning
+          once roamed as a shepherd. When the truth about the boy&apos;s true
+          nature begins to unravel, it&apos;s a revelation that arrives too late
+          for the general and his army. Through twists of fate and the cunning
           manipulation of circumstances, the general and his forces find
           themselves marching toward their downfall, orchestrated by the young
           shepherd whose true strength lies beyond the constraints of his

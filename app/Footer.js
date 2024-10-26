@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Import the Image component
 import { Cinzel, Playfair_Display } from "next/font/google";
 
 const cinzel = Cinzel({ subsets: ["latin"] });
@@ -10,9 +11,11 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4">
         {/* Left Container for Logo */}
         <div className="flex-1">
-          <img
-            src="/histria.png" // Replace with the actual path to your logo
+          <Image
+            src="/histria.png" // Path to your logo
             alt="Histria Books"
+            width={192} // Set appropriate width
+            height={48} // Set appropriate height
             className="w-20 md:w-48" // Responsive size for the logo
           />
         </div>
