@@ -9,7 +9,7 @@ const cinzel = Cinzel({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 // Configure the worker for pdf.js
-pdfjs.GlobalWorkerOptions.workerSrc = `pdfjs-dist/build/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const ReadExcerptSection = () => {
   const [numPages, setNumPages] = useState(null);
