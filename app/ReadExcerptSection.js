@@ -26,7 +26,7 @@ const ReadExcerptSection = () => {
       </h2>
       <div className="bg-white text-black p-4 rounded-lg shadow-lg max-h-[500px] overflow-y-scroll md:w-[55%] mx-auto">
         <Document
-          file="https://the-shepherd-novel-jo85ydmrv-bodiaugustusprotonmailcs-projects.vercel.app/WebsiteVersion.pdf"
+          file="../public/WebsiteVersion.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
