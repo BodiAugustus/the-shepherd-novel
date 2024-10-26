@@ -49,7 +49,7 @@ const HeroSection = () => {
           />
           <Link
             href="https://www.amazon.com/Shepherd-Bronze-Age-Tale/dp/1592113842"
-            className="bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out"
+            className="bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out text-2xl"
             target="_blank"
           >
             Buy Now

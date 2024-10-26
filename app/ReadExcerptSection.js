@@ -10,7 +10,7 @@ const ReadExcerptSection = () => {
   const docs = [{ uri: "/WebsiteVersion.pdf" }]; // Ensure the PDF is in the public folder
 
   return (
-    <div className="bg-orange-500 p-6 xs:h-auto md:h-[100vh] pb-4">
+    <div className="bg-orange-500 p-6 xs:h-auto pb-4">
       <h2 className={`${cinzel.className} text-3xl text-center font-bold mb-3`}>
         Read an Excerpt:
       </h2>
